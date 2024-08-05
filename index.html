@@ -2,12 +2,401 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="./public/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <main class="main" id="main">
+        <section class="first-block">
+          <div class="container">
+            <div class="first-block-items">
+              <div class="first-block-item item">
+                <div class="first-block-item-photo">
+                  <img src="./Images/profileImg.png" alt="profileImg" />
+                </div>
+              </div>
+              <div class="first-block-item item">
+                <div class="first-block-item-name">
+                  <div class="hello-text">Hello 👋🏻 I'm</div>
+                  <div class="name-block">
+                    <p class="name">Karthik SR</p>
+                    <p class="role">UX/UI Designer</p>
+                  </div>
+                </div>
+              </div>
+              <div class="first-block-item item">
+                <div class="first-block-item-languages">
+                  <h1 class="main-title">Languages</h1>
+                  <div class="languages-block">
+                    <div class="languages">
+                      <p class="language">English</p>
+                      <p class="language">Malayalam</p>
+                      <p class="language">Hindi</p>
+                    </div>
+                    <div class="languages-level">
+                      <input
+                        type="range"
+                        class="level"
+                        value="50"
+                        min="0"
+                        max="100"
+                        oninput="this.style.setProperty('--value', this.value + '%')"
+                      />
+                      <input
+                        type="range"
+                        class="level"
+                        value="50"
+                        min="0"
+                        max="100"
+                        oninput="this.style.setProperty('--value', this.value + '%')"
+                      />
+                      <input
+                        type="range"
+                        class="level"
+                        value="50"
+                        min="0"
+                        max="100"
+                        oninput="this.style.setProperty('--value', this.value + '%')"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="second-block">
+          <div class="container">
+            <div class="second-block-items">
+              <div class="second-block-item item">
+                <h1 class="main-title">Experience</h1>
+                <div class="second-block-item-experience">
+                  <div class="experience-block green-card" id="tag-one-block">
+                    <div class="experience-block-topBar">
+                      <p class="date">Jun. 2023 - Present</p>
+                      <div class="tag green-tag" id="tag-one">most recent</div>
+                    </div>
+                    <div class="experience-block-content">
+                      <div class="jobInfo">
+                        <p class="roleName">Marketing Manager</p>
+                        <p class="info">Pankayam|Full-time</p>
+                      </div>
+                      <div class="futurePoint">
+                        <ul>
+                          <li>
+                            <span class="futurePoint-text"
+                              >Strategy development and planning of campaigns
+                              that promote the business and generate genuine
+                              traffic</span
+                            >
+                          </li>
+                          <li>
+                            <span class="futurePoint-text"
+                              >SEO Content Creation for Blogs, Website, Social
+                              media</span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="experience-block" id="tag-two-block">
+                    <div class="experience-block-topBar">
+                      <p class="date">2017 - Present</p>
+                      <div class="tag" id="tag-two">most recent</div>
+                    </div>
+                    <div class="experience-block-content">
+                      <div class="jobInfo">
+                        <p class="roleName">Graphic / Web designer</p>
+                        <p class="info">Freelance</p>
+                      </div>
+                      <div class="futurePoint">
+                        <ul>
+                          <li>
+                            <span class="futurePoint-text"
+                              >Development of internal projects from scratch,
+                              product design of brands</span
+                            >
+                          </li>
+                          <li>
+                            <span class="futurePoint-text"
+                              >Landing page, webapps and hybrid apps</span
+                            >
+                          </li>
+                          <li>
+                            <span class="futurePoint-text"
+                              >Coordinating with outside agencies, art services,
+                              web designer, marketing, printers, and colleagues
+                              as necessary.</span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="experience-block" id="tag-three-block">
+                    <div class="experience-block-topBar">
+                      <p class="date">Sep. 2021 - Jun. 2023</p>
+                      <div class="tag green" id="tag-three">most recent</div>
+                    </div>
+                    <div class="experience-block-content">
+                      <div class="jobInfo">
+                        <p class="roleName">Legal Assistant</p>
+                        <p class="info">Law Firm|Intern</p>
+                      </div>
+                      <div class="futurePoint">
+                        <ul>
+                          <li>
+                            <span class="futurePoint-text"
+                              >Provide administrative support to lawyer and
+                              enhance office effectiveness</span
+                            >
+                          </li>
+                          <li>
+                            <span class="futurePoint-text"
+                              >Handle communication with clients, witnesses
+                              etc.</span
+                            >
+                          </li>
+                          <li>
+                            <span class="futurePoint-text"
+                              >repare case briefs and summarize depositions,
+                              interrogatories and testimony</span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="second-block-item item">
+                <h1 class="main-title">Tools</h1>
+                <div class="second-block-item-tools">
+                  <div class="tools-blocks">
+                    <div class="tools-block">
+                      <p class="tools-black-block">design</p>
+                      <div class="logos-design">
+                        <img
+                          class="logo"
+                          src="Images/Icons/logoFigma.svg"
+                          alt="logoFigma"
+                        />
+                        <img
+                          class="logo"
+                          src="Images/Icons/logoAdobe_photoshop.svg"
+                          alt="logoAdobe_photoshop"
+                        />
+                        <img
+                          class="logo"
+                          src="Images/Icons/logoAdobe_illustrator.svg"
+                          alt="logoAdobe_illustrator"
+                        />
+                        <img
+                          class="logo"
+                          src="Images/Icons/logoAdobe_premiere.svg"
+                          alt="logoAdobe_premiere"
+                        />
+                        <img
+                          class="logo"
+                          src="Images/Icons/logoNotion.svg"
+                          alt="logoNotion"
+                        />
+                        <img
+                          class="logo"
+                          src="Images/Icons/logoMeet.svg"
+                          alt="logoMeet"
+                        />
+                      </div>
+                    </div>
+                    <div class="tools-block">
+                      <p class="tools-black-block">no-code</p>
+                      <div class="logos-design">
+                        <img
+                          class="logo"
+                          src="Images/Icons/logoZapier.svg"
+                          alt="logoZapier"
+                        />
+                        <img
+                          class="logo"
+                          src="Images/Icons/logoWebflow.svg"
+                          alt="logoWebflow"
+                        />
+                        <img
+                          class="logo"
+                          src="Images/Icons/logoFramer.svg"
+                          alt="logoFramer"
+                        />
+                        <img
+                          class="logo"
+                          src="Images/Icons/logoWordpress.svg"
+                          alt="logoWordpress"
+                        />
+                      </div>
+                    </div>
+                    <div class="tools-block">
+                      <p class="tools-black-block">artoficial intelligence</p>
+                      <div class="logos-design">
+                        <img
+                          class="logo"
+                          src="Images/Icons/logoChatGPT.svg"
+                          alt="logoChatGPT"
+                        />
+                        <img
+                          class="logo"
+                          src="Images/Icons/logoCopilot.svg"
+                          alt="logoCopilot"
+                        />
+                        <img
+                          class="logo"
+                          src="Images/Icons/logoMidjourney.svg"
+                          alt="logoMidjourney"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="third-block">
+          <div class="container">
+            <div class="third-block-items">
+              <div class="third-block-item item">
+                <div class="third-block-item-education">
+                  <h1 class="main-title">Education</h1>
+                  <div class="education-blocks">
+                    <div class="education-block green-card" id="card-one-block">
+                      <div class="year_block">
+                        <p class="education-block-year">2023</p>
+                        <svg
+                          width="11"
+                          height="11"
+                          viewBox="0 0 11 11"
+                          fill="none"
+                          class="heart"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            class="heart-svg yellow"
+                            id="card-one"
+                            d="M2.75 0.807373C1.99375 0.807373 1.32 1.12388 0.81125 1.61929C0.31625 2.1147 0 2.78901 0 3.55965C0 4.31653 0.31625 4.99083 0.81125 5.5L5.5 10.1926L10.1887 5.5C10.6837 5.00459 11 4.33029 11 3.55965C11 2.80277 10.6837 2.12847 10.1887 1.61929C9.69375 1.12388 9.02 0.807373 8.25 0.807373C7.49375 0.807373 6.82 1.12388 6.31125 1.61929C5.81625 2.1147 5.5 2.78901 5.5 3.55965C5.5 2.80277 5.18375 2.12847 4.68875 1.61929C4.19375 1.12388 3.52 0.807373 2.75 0.807373Z"
+                            fill="yellow"
+                          />
+                        </svg>
+                      </div>
+                      <div class="education-block-info">
+                        <p class="title">UI/UX</p>
+                        <p class="tags">
+                          #UX #UI #research #DesignSystem #Ui #wireframing
+                          #figma #Ux
+                        </p>
+                      </div>
+                      <p class="education-block-schoolName">Coursera</p>
+                    </div>
+
+                    <div class="education-block" id="card-two-block">
+                      <div class="year_block">
+                        <p class="education-block-year">2017 - 2022</p>
+                        <svg
+                          width="11"
+                          height="11"
+                          viewBox="0 0 11 11"
+                          fill="none"
+                          class="heart"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            class="heart-svg"
+                            id="card-two"
+                            d="M2.75 0.807373C1.99375 0.807373 1.32 1.12388 0.81125 1.61929C0.31625 2.1147 0 2.78901 0 3.55965C0 4.31653 0.31625 4.99083 0.81125 5.5L5.5 10.1926L10.1887 5.5C10.6837 5.00459 11 4.33029 11 3.55965C11 2.80277 10.6837 2.12847 10.1887 1.61929C9.69375 1.12388 9.02 0.807373 8.25 0.807373C7.49375 0.807373 6.82 1.12388 6.31125 1.61929C5.81625 2.1147 5.5 2.78901 5.5 3.55965C5.5 2.80277 5.18375 2.12847 4.68875 1.61929C4.19375 1.12388 3.52 0.807373 2.75 0.807373Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </div>
+                      <div class="education-block-info">
+                        <p class="title">Law</p>
+                        <p class="tags">
+                          #law #legalStudies #contracts #internationalLaws
+                        </p>
+                      </div>
+                      <p class="education-block-schoolName">
+                        University of Kerala
+                      </p>
+                    </div>
+
+                    <div class="education-block" id="card-three-block">
+                      <div class="year_block">
+                        <p class="education-block-year">2017</p>
+                        <svg
+                          width="11"
+                          height="11"
+                          viewBox="0 0 11 11"
+                          fill="none"
+                          class="heart"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            class="heart-svg"
+                            id="card-three"
+                            d="M2.75 0.807373C1.99375 0.807373 1.32 1.12388 0.81125 1.61929C0.31625 2.1147 0 2.78901 0 3.55965C0 4.31653 0.31625 4.99083 0.81125 5.5L5.5 10.1926L10.1887 5.5C10.6837 5.00459 11 4.33029 11 3.55965C11 2.80277 10.6837 2.12847 10.1887 1.61929C9.69375 1.12388 9.02 0.807373 8.25 0.807373C7.49375 0.807373 6.82 1.12388 6.31125 1.61929C5.81625 2.1147 5.5 2.78901 5.5 3.55965C5.5 2.80277 5.18375 2.12847 4.68875 1.61929C4.19375 1.12388 3.52 0.807373 2.75 0.807373Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </div>
+                      <div class="education-block-info">
+                        <p class="title">Graphic design</p>
+                        <p class="tags">#branding #web #illustration #adobe</p>
+                      </div>
+                      <p class="education-block-schoolName">Coursrea</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="third-block-item item">
+                <div class="third-block-item-interests item">
+                  <h1 class="main-title">Interests</h1>
+                  <div class="interests-items">
+                    <p class="interests-item">branding</p>
+                    <p class="interests-item">design</p>
+                    <p class="interests-item">photography</p>
+                    <p class="interests-item">artificial intelligence</p>
+                    <p class="interests-item">illustration</p>
+                    <p class="interests-item">typography</p>
+                    <p class="interests-item">social networks</p>
+                    <p class="interests-item">research</p>
+                    <p class="interests-item">dron pilot</p>
+                    <p class="interests-item">games</p>
+                  </div>
+                </div>
+                <div class="third-block-item-contact item">
+                  <p class="main-title">
+                    Let's chat! I'm ready to work on excinting projects
+                  </p>
+                  <p class="email">srkarthik.designscape@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <div class="container-download-button">
+        <div class="container">
+          <button class="button" id="download">Download</button>
+        </div>
+      </div>
+    </div>
     <script type="module" src="./js/main.js"></script>
   </body>
 </html>
